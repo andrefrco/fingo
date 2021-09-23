@@ -3,6 +3,14 @@ module github.com/andrefrco/gofin
 go 1.16
 
 require (
-	github.com/russross/blackfriday/v2 v2.1.0 // indirect
-	github.com/spf13/cobra v1.2.1 // indirect
+	github.com/apex/log v1.9.0
+	github.com/caarlos0/env/v6 v6.7.1
+	github.com/codegangsta/negroni v1.0.0
+	github.com/google/uuid v1.3.0
+	github.com/gorilla/context v1.1.1
+	github.com/gorilla/mux v1.8.0
+	github.com/jmoiron/sqlx v1.3.4
+	github.com/lib/pq v1.10.3
+	github.com/stretchr/testify v1.7.0
+	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 )
