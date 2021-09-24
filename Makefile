@@ -28,7 +28,8 @@ ci: dependencies test
 build-mocks:
 	@go get github.com/golang/mock/gomock
 	@go install github.com/golang/mock/mockgen
-	@~/go/bin/mockgen -source=usecase/transaction/interface.go -destination=usecase/transaction/mock/transaction.go -package=mock
+	@${GOPATH}/bin/mockgen -source=usecase/transaction/interface.go -destination=usecase/transaction/mock/transaction.go -package=mock
+	@${GOPATH}/bin/mockgen -source=usecase/user/interface.go -destination=usecase/user/mock/user.go -package=mock
 
 test:
 	go test -tags testing ./...

@@ -22,7 +22,7 @@ func NewService(r Repository) *Service {
 func (s *Service) CreateTransaction(title string, value int64) (entity.ID, error) {
 	b, err := entity.NewTransaction(title, value)
 	if err != nil {
-		return b.ID, err
+		return entity.NewID(), err
 	}
 	return s.repo.Create(b)
 }
