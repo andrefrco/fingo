@@ -6,6 +6,8 @@
 
 ---
 
+Project to manage my personal financial balance
+
 ## API Requests
 
 add transaction
